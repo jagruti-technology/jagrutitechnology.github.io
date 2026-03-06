@@ -2,196 +2,30 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Jagruti Technology | DevOps & Cloud Consulting</title>
 
+<link rel="stylesheet" href="css/styles.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#0f172a;
-color:white;
-}
-
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-background:#020617;
-position:sticky;
-top:0;
-z-index:100;
-}
-
-.logo{
-display:flex;
-align-items:center;
-font-size:22px;
-font-weight:600;
-}
-
-.logo-icon{
-width:40px;
-height:40px;
-margin-right:10px;
-background:linear-gradient(135deg,#38bdf8,#6366f1);
-border-radius:10px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:bold;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:30px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-opacity:.8;
-}
-
-nav a:hover{
-opacity:1;
-}
-
-/* HERO */
-
-.hero{
-height:80vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:50px;
-margin-bottom:20px;
-}
-
-.hero span{
-background:linear-gradient(90deg,#38bdf8,#6366f1);
--webkit-background-clip:text;
-color:transparent;
-}
-
-.hero p{
-max-width:600px;
-opacity:.8;
-margin-bottom:30px;
-}
-
-.btn{
-background:linear-gradient(135deg,#38bdf8,#6366f1);
-padding:14px 30px;
-border-radius:30px;
-text-decoration:none;
-color:white;
-font-weight:600;
-}
-
-/* SERVICES */
-
-.section{
-padding:80px 10%;
-text-align:center;
-}
-
-.section h2{
-font-size:36px;
-margin-bottom:50px;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.card{
-background:#020617;
-padding:30px;
-border-radius:15px;
-transition:.3s;
-border:1px solid rgba(255,255,255,.05);
-}
-
-.card:hover{
-transform:translateY(-10px);
-border:1px solid #6366f1;
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-/* ABOUT */
-
-.about{
-max-width:800px;
-margin:auto;
-opacity:.9;
-line-height:1.6;
-}
-
-/* CONTACT */
-
-.contact{
-background:#020617;
-padding:60px;
-border-radius:20px;
-max-width:700px;
-margin:auto;
-}
-
-.contact input,.contact textarea{
-width:100%;
-padding:12px;
-margin-top:10px;
-margin-bottom:20px;
-border:none;
-border-radius:8px;
-}
-
-footer{
-text-align:center;
-padding:30px;
-opacity:.7;
-}
-
-</style>
 
 </head>
 
 <body>
 
-<nav>
+<header>
+
+<nav class="navbar">
 
 <div class="logo">
-<div class="logo-icon">JT</div>
-Jagruti Technology
+<img src="images/logo.svg">
+<span>Jagruti Technology</span>
 </div>
 
-<ul>
+<ul class="nav-links">
 <li><a href="#services">Services</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#contact">Contact</a></li>
@@ -201,51 +35,53 @@ Jagruti Technology
 
 <section class="hero">
 
-<h1>Building <span>Cloud Infrastructure</span><br>That Scales</h1>
+<h1>Cloud Infrastructure <span>That Scales</span></h1>
 
 <p>
 DevOps, Kubernetes, and Cloud consulting helping companies build secure,
-scalable, and automated infrastructure.
+scalable and automated infrastructure.
 </p>
 
-<a class="btn" href="#contact">Work With Us</a>
+<a href="#contact" class="cta">Work With Us</a>
 
 </section>
 
+</header>
+
 <section class="section" id="services">
 
-<h2>Services</h2>
+<h2>Our Services</h2>
 
 <div class="services">
 
 <div class="card">
 <h3>DevOps Consulting</h3>
-<p>CI/CD pipelines, GitOps workflows, infrastructure automation.</p>
+<p>CI/CD pipelines, automation and GitOps.</p>
 </div>
 
 <div class="card">
 <h3>Kubernetes</h3>
-<p>Cluster design, scaling strategies, and production operations.</p>
+<p>Production cluster architecture and scaling.</p>
 </div>
 
 <div class="card">
 <h3>Cloud Architecture</h3>
-<p>AWS, Azure and GCP infrastructure design for reliability.</p>
+<p>AWS, Azure and GCP infrastructure design.</p>
 </div>
 
 <div class="card">
 <h3>Observability</h3>
-<p>Prometheus, Grafana, tracing and alerting systems.</p>
+<p>Prometheus, Grafana, tracing and alerting.</p>
 </div>
 
 <div class="card">
-<h3>Security & Compliance</h3>
-<p>SOC2 readiness, vulnerability mitigation and secure infra.</p>
+<h3>Security</h3>
+<p>Compliance, vulnerability mitigation and secure infra.</p>
 </div>
 
 <div class="card">
 <h3>Performance Engineering</h3>
-<p>Load testing and large scale performance optimization.</p>
+<p>Load testing and system optimization.</p>
 </div>
 
 </div>
@@ -254,45 +90,50 @@ scalable, and automated infrastructure.
 
 <section class="section" id="about">
 
-<h2>About</h2>
+<h2>About Jagruti Technology</h2>
 
-<div class="about">
+<p class="about-text">
 
-Jagruti Technology is a DevOps and Cloud consulting company focused on
-helping businesses build reliable infrastructure.
+Jagruti Technology is a cloud and DevOps consulting company helping
+organizations build reliable infrastructure.
 
-We specialize in Kubernetes platforms, CI/CD pipelines, observability,
-and secure cloud environments.
+We specialize in Kubernetes platforms, CI/CD automation, observability
+systems, and scalable cloud architecture.
 
-Our mission is to help organizations move faster with automated,
-scalable and production-grade infrastructure.
-
-</div>
+</p>
 
 </section>
 
-<section class="section" id="contact">
+<section class="section contact-section" id="contact">
 
-<h2>Contact</h2>
+<h2>Contact Us</h2>
 
-<div class="contact">
+<form id="contact-form"
+action="https://formsubmit.co/contact@jagrutitechnology.com"
+method="POST">
 
-<input placeholder="Your Name">
-<input placeholder="Email">
-<textarea rows="4" placeholder="Message"></textarea>
+<input type="text" name="name" placeholder="Your Name" required>
 
-<a class="btn">Send Message</a>
+<input type="email" name="email" placeholder="Your Email" required>
 
-</div>
+<textarea name="message" rows="5" placeholder="Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+<input type="hidden" name="_captcha" value="false">
+
+</form>
 
 </section>
 
 <footer>
 
-© 2026 Jagruti Technology  
-Cloud • DevOps • Infrastructure
+<p>© 2026 Jagruti Technology</p>
 
 </footer>
 
+<script src="js/script.js"></script>
+
 </body>
+
 </html>
