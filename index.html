@@ -9,6 +9,7 @@
 <title>Jagruti Technology | DevOps & Cloud Consulting</title>
 
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/animations.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -27,7 +28,8 @@
 
 <ul class="nav-links">
 <li><a href="#services">Services</a></li>
-<li><a href="#about">About</a></li>
+<li><a href="#stack">Tech</a></li>
+<li><a href="#process">Process</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
@@ -35,14 +37,21 @@
 
 <section class="hero">
 
-<h1>Cloud Infrastructure <span>That Scales</span></h1>
+<h1>Build <span>Production-Grade</span> Cloud Infrastructure</h1>
 
 <p>
-DevOps, Kubernetes, and Cloud consulting helping companies build secure,
-scalable and automated infrastructure.
+
+We help companies build scalable DevOps platforms using Kubernetes,
+automation and modern cloud architecture.
+
 </p>
 
-<a href="#contact" class="cta">Work With Us</a>
+<div class="hero-buttons">
+
+<a href="#contact" class="btn-primary">Start a Project</a>
+<a href="#services" class="btn-secondary">Our Services</a>
+
+</div>
 
 </section>
 
@@ -50,73 +59,131 @@ scalable and automated infrastructure.
 
 <section class="section" id="services">
 
-<h2>Our Services</h2>
+<h2>Services</h2>
 
 <div class="services">
 
 <div class="card">
-<h3>DevOps Consulting</h3>
-<p>CI/CD pipelines, automation and GitOps.</p>
+<h3>Kubernetes Platforms</h3>
+<p>Production cluster architecture, scaling, upgrades.</p>
 </div>
 
 <div class="card">
-<h3>Kubernetes</h3>
-<p>Production cluster architecture and scaling.</p>
+<h3>DevOps Automation</h3>
+<p>CI/CD pipelines, GitOps workflows, automation.</p>
 </div>
 
 <div class="card">
 <h3>Cloud Architecture</h3>
-<p>AWS, Azure and GCP infrastructure design.</p>
+<p>AWS, Azure and GCP production infrastructure.</p>
 </div>
 
 <div class="card">
 <h3>Observability</h3>
-<p>Prometheus, Grafana, tracing and alerting.</p>
+<p>Prometheus, Grafana, tracing, alerting.</p>
 </div>
 
 <div class="card">
-<h3>Security</h3>
-<p>Compliance, vulnerability mitigation and secure infra.</p>
+<h3>Security & Compliance</h3>
+<p>SOC2 readiness and secure infrastructure.</p>
 </div>
 
 <div class="card">
 <h3>Performance Engineering</h3>
-<p>Load testing and system optimization.</p>
+<p>Load testing and high scale performance tuning.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="section" id="about">
+<section class="section tech" id="stack">
 
-<h2>About Jagruti Technology</h2>
+<h2>Technology Stack</h2>
 
-<p class="about-text">
+<div class="tech-grid">
 
-Jagruti Technology is a cloud and DevOps consulting company helping
-organizations build reliable infrastructure.
+<div>Kubernetes</div>
+<div>AWS</div>
+<div>Terraform</div>
+<div>Prometheus</div>
+<div>Grafana</div>
+<div>GitLab</div>
+<div>Docker</div>
+<div>OpenTelemetry</div>
 
-We specialize in Kubernetes platforms, CI/CD automation, observability
-systems, and scalable cloud architecture.
+</div>
 
-</p>
+</section>
+
+<section class="section case">
+
+<h2>Example Impact</h2>
+
+<div class="case-grid">
+
+<div class="case-card">
+<h3>80% Faster Deployments</h3>
+<p>Built CI/CD pipelines and GitOps workflows.</p>
+</div>
+
+<div class="case-card">
+<h3>Scalable Kubernetes Platform</h3>
+<p>Designed clusters handling millions of requests.</p>
+</div>
+
+<div class="case-card">
+<h3>Production Observability</h3>
+<p>Implemented monitoring and tracing stacks.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section process" id="process">
+
+<h2>Our Process</h2>
+
+<div class="process-grid">
+
+<div class="step">
+<h3>1. Discovery</h3>
+<p>Understand architecture and challenges.</p>
+</div>
+
+<div class="step">
+<h3>2. Architecture</h3>
+<p>Design scalable DevOps platform.</p>
+</div>
+
+<div class="step">
+<h3>3. Implementation</h3>
+<p>Build infrastructure and automation.</p>
+</div>
+
+<div class="step">
+<h3>4. Optimization</h3>
+<p>Improve reliability, cost and performance.</p>
+</div>
+
+</div>
 
 </section>
 
 <section class="section contact-section" id="contact">
 
-<h2>Contact Us</h2>
+<h2>Start Your Project</h2>
 
-<form id="contact-form"
+<form
 action="https://formsubmit.co/contact@jagrutitechnology.com"
 method="POST">
 
-<input type="text" name="name" placeholder="Your Name" required>
+<input type="text" name="name" placeholder="Name" required>
 
-<input type="email" name="email" placeholder="Your Email" required>
+<input type="email" name="email" placeholder="Email" required>
 
-<textarea name="message" rows="5" placeholder="Message" required></textarea>
+<textarea name="message" placeholder="Tell us about your project" required></textarea>
 
 <button type="submit">Send Message</button>
 
@@ -135,5 +202,4 @@ method="POST">
 <script src="js/script.js"></script>
 
 </body>
-
 </html>
